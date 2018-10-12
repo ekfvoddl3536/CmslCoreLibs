@@ -3,7 +3,7 @@
 ---
 ## 목차
 * [CMSL V 시리즈 및 Q 시리즈 소개](https://github.com/ekfvoddl3536/cmsl_update/blob/master/q2.0/document.md#cmsl-v-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%B0%8F-q-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%86%8C%EA%B0%9C)
-* CMSL Q2.0 주요 특징
+* [CMSL Q2.0 주요 특징](https://github.com/ekfvoddl3536/cmsl_update/blob/master/q2.0/document.md#cmsl-q20-%EC%A3%BC%EC%9A%94-%ED%8A%B9%EC%A7%95)
 * 로그인 시스템
 * CMSL-EULA에 대하여
 * 프로그램 메인
