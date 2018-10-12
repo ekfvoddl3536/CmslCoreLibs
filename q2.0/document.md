@@ -22,7 +22,7 @@
   + 서버 추가 메인
   + 서버 추가 (A, 새로 만들기)
   + 서버 추가 (B, 로딩)
-* Q2.0 오픈소스에 대하여 
+* [Q2.0 오픈소스에 대하여](https://github.com/ekfvoddl3536/cmsl_update/blob/master/q2.0/document.md#q20-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)
 ----
 
 # Q2.0 오픈소스에 대하여
