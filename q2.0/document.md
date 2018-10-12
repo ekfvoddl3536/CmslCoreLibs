@@ -1,5 +1,6 @@
 # 커스텀 마인크래프트 서버 구동기 Q2.0 - 공식 설명 문서
-> 커스텀 마인크래프트 서버 구동기 Q2.0 설명 문서는 사용자에게 CMSL Q2.0을 소개하며, CMSL Q2.0에 구현되어 있는 모든 기능들을 자세하게 서술합니다.  > 조만간 위키가 만들어질 예정  
+> 커스텀 마인크래프트 서버 구동기 Q2.0 설명 문서는 사용자에게 CMSL Q2.0을 소개하며, CMSL Q2.0에 구현되어 있는 모든 기능들을 자세하게 서술합니다.   
+> 조만간 위키가 만들어질 예정  
 ---
 ## 목차
 * [CMSL V 시리즈 및 Q 시리즈 소개](https://github.com/ekfvoddl3536/cmsl_update/blob/master/q2.0/document.md#cmsl-v-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%B0%8F-q-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%86%8C%EA%B0%9C)
