@@ -1,10 +1,10 @@
 # 커스텀 마인크래프트 서버 구동기 Q2.0 - 공식 설명 문서
-> 커스텀 마인크래프트 서버 구동기 Q2.0 설명 문서는 사용자에게 CMSL Q2.0을 소개하며, CMSL Q2.0에 구현되어 있는 모든 기능들을 자세하게 서술합니다.
+> 커스텀 마인크래프트 서버 구동기 Q2.0 설명 문서는 사용자에게 CMSL Q2.0을 소개하며, CMSL Q2.0에 구현되어 있는 모든 기능들을 자세하게 서술합니다.  > 조만간 위키가 만들어질 예정  
 ---
 ## 목차
 * [CMSL V 시리즈 및 Q 시리즈 소개](https://github.com/ekfvoddl3536/cmsl_update/blob/master/q2.0/document.md#cmsl-v-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EB%B0%8F-q-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%86%8C%EA%B0%9C)
 * [CMSL Q2.0 주요 특징](https://github.com/ekfvoddl3536/cmsl_update/blob/master/q2.0/document.md#cmsl-q20-%EC%A3%BC%EC%9A%94-%ED%8A%B9%EC%A7%95)
-* 로그인 시스템
+* [로그인 시스템](https://github.com/ekfvoddl3536/cmsl_update/blob/master/q2.0/document.md#%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C)
 * CMSL-EULA에 대하여
 * 프로그램 메인
   + 중앙 [메인 패널]
