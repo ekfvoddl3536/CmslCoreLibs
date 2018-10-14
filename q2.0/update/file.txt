@@ -1,0 +1,4 @@
+[title] 업데이트 테스트, 타이틀
+[text] 업데이트 테스트, 내용
+[link] http://ekfvoddl3535.cafe24.com/xe/home
+[version] 65537
