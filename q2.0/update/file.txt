@@ -1,4 +1,4 @@
-[title] 업데이트 테스트, 타이틀
-[text] 업데이트 테스트, 내용
+[title] 새 업데이트!
+[text] 커스텀 마인크래프트 서버 구동기 Q2.0
 [link] http://ekfvoddl3535.cafe24.com/xe/home
-[version] 65537
+[version] 65536
