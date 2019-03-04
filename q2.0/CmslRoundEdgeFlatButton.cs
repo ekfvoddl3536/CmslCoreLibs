@@ -79,6 +79,8 @@ namespace CmslDesign
             m_insetsize = m_olsize / 2 + m_olsize % 2;
 
             m_brushes = new SolidBrush[BrushCount] { new SolidBrush(Color.DodgerBlue), new SolidBrush(Color.White), new SolidBrush(Color.FromArgb(128, 128, 255)) };
+            // Alignment 이거 Center로 안하면, 안티 켜든 끄든 퀄리티 설정하든 말든 전부 흐리게 그려짐
+            // 아무튼 Center로 해야됨
             m_pen = new Pen(m_brushes[0].Color, m_olsize) { Alignment = PenAlignment.Center };
             m_stfmt = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center };
         }
