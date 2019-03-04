@@ -45,7 +45,6 @@ namespace CmslDesign
 		protected int m_max;
 		protected int m_min;
 		protected int m_val;
-		protected Color m_actcolor;
 		// 과도한 GC 호출을 방지
 		protected SolidBrush m_sb;
 		
@@ -54,8 +53,7 @@ namespace CmslDesign
 			m_max = 100;
 			m_min = 0;
 			m_val = 20;
-			m_actcolor = Color.DodgerBlue;
-			m_sb = new SolidBrush(m_actcolor);
+			m_sb = new SolidBrush(Color.DodgerBlue);
 		}
 		
 		// set에 Invalidate() 가 있어야만 값이 변경될 때마다 OnPaint가 호출된다.
@@ -63,10 +61,9 @@ namespace CmslDesign
 		[Category(Set)]
 		public Color BarColor
 		{
-			get => m_actcolor;
+			get => m_sb.Color;
 			set
 			{
-				m_actcolor = value;
 				m_sb.Color = value;
 				Invalidate();
 			}
