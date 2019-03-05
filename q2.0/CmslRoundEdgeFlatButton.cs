@@ -61,8 +61,6 @@ namespace CmslDesign
             SetStyle(ControlStyles.Selectable, false);
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
 
-            // Region = new Region(new Rectangle(0, 0, Width + 1, Height + 1));
-
             FlatStyle = FlatStyle.Flat;
             FlatAppearance.BorderSize = 0;
             FlatAppearance.MouseDownBackColor = FlatAppearance.MouseOverBackColor = Color.Transparent;
