@@ -42,9 +42,16 @@ namespace CmslDesign
 		// "설정1"을 한영 바꾸면서 입력하기가 힘들다. const로 만들어 놓으면 굉장히 편하다.
 		private const string Set = "설정1";
 		
-		protected int m_max;
-		protected int m_min;
-		protected int m_val;
+                // 정수형으로
+                // protected int m_max; 
+                // protected int m_min; 
+                // protected int m_val; 
+                
+                // 실수형으로
+		protected float m_max;
+		protected float m_min;
+		protected float m_val;
+
 		// 과도한 GC 호출을 방지
 		protected SolidBrush m_sb;
 		
@@ -73,7 +80,8 @@ namespace CmslDesign
 		// 2) Max 값이 Min 보다 작으면 Min 값을 Max보다 1작게 설정한다.
 		// 3) Max 값이 Val 보다 작으면 Val 값을 Max 와 같게 설정한다.
 		[Category(Set)]
-		public int MaximumStep
+		// public int MaximumStep
+		public float MaximumStep
 		{
 			get => m_max;
 			set
@@ -90,7 +98,8 @@ namespace CmslDesign
 		// 2) Min 값이 Max 보다 크면 Max 값을 Min 보다 1크게 설정한다. checked 블록을 이용하여 오버플로를 검사한다.
 		// 3) Min 값이 Val 보다 크면 Val 값을 Min 과 같게 설정한다.
 		[Category(Set)]
-		public int MinimumStep
+		// public int MinimumStep
+		public float MinimumStep
 		{
 			get => m_min;
 			set
@@ -107,7 +116,8 @@ namespace CmslDesign
 		// 2) Val 값이 Max 보다 크면 Max 값을 Val 과 같게 설정한다.
 		// 3) Val 값이 Min 보다 작으면 Min 값을 Val 과 같게 설정한다.
 		[Category(Set)]
-		public int CurrentStep
+		// public int CurrentStep
+		public float CurrentStep
 		{
 			get => m_val;
 			set
@@ -123,8 +133,9 @@ namespace CmslDesign
 		// Val 값에 1을 추가하고 그린다
 		public void AddStep() => AddStep(1);
 		
-		// Val 값이 (int)만큼 추가하고 그린다
-		public void AddStep(int val)
+		// Val 값이 인수로 전달된 값 만큼 추가하고 그린다
+                // public void AddStep(int val)
+		public void AddStep(float val)
 		{
 			if (checked(m_val + val) < m_max)
 			{
@@ -133,10 +144,20 @@ namespace CmslDesign
 			}
 		}
 		
-		// m_max 또는 m_val을 (float)으로 만들어야만 한다
-		// m_val (20) / m_max(100)을 int로 할 경우 0이 나온다.
-		// (Visual Studio 2017 기준) '/'에 마우스를 올려보면 float 으로 계산하는지 int로 계산하는지 알 수 있다.
-		protected virtual int GetBarWidth => (int)(m_val / (float)m_max * Width);
+                
+                // float이든 double이든 0.1을 매우 정확하게 표현하지는 못합니다.
+                // 그래서 개인적으로 저는 int와 같은 정수형을 선호합니다만,
+                // float이나 double은 같은 크기의 정수형보다 더 많은 수를 표현할 수 있습니다.
+                // 적절히 활용하시면 될 것 같습니다.
+                
+		// m_max, m_val, m_min을 int로 사용하시는 분들은 참고:
+		// m_max 또는 m_val을 (float)으로 만들어야만 합니다.
+		// m_val (20) / m_max(100)을 int로 할 경우 0이 나오고요.
+		// (Visual Studio 2017 기준) '/'에 마우스를 올려보면 float 으로 계산하는지 int로 계산하는지 알 수 있습니다.
+                
+                // float 과 int 중 택해서 사용하시면 될 것 같습니다.
+		// protected virtual int GetBarWidth => (int)(m_val / (float)m_max * Width);
+                protected virtual float GetBarWidth => m_val / m_max * Width;
 		
 		protected override void OnPaint(PaintEventArgs e)
 		{
