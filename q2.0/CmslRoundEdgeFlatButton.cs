@@ -46,7 +46,6 @@ namespace CmslDesign
         private const int BrushCount = 3;
 
         private byte ModeC;
-        private int m_radi;
         private int m_olsize;
         private int m_insetsize;
 
@@ -72,7 +71,6 @@ namespace CmslDesign
             MouseLeave += RoundEdgeFlatButton_MouseLeave;
             MouseDown += RoundEdgeFlatButton_MouseDown;
 
-            m_radi = 25;
             m_olsize = 4;
             m_insetsize = m_olsize / 2 + m_olsize % 2;
 
@@ -105,24 +103,12 @@ namespace CmslDesign
         }
 
         [Category(Category1)]
-        public int EdgeRadius
-        {
-            get => m_radi;
-            set
-            {
-                if (m_radi < 0 || value / 2 >= Width || value / 2 >= Height) return;
-                m_radi = value;
-                Invalidate();
-            }
-        }
-
-        [Category(Category1)]
         public int OutLineSize
         {
             get => m_olsize;
             set
             {
-                if (m_radi < 0 || value >= Width || value >= Height) return;
+                if (value >= Width || value >= Height) return;
                 m_pen.Width = m_olsize = value;
                 m_insetsize = value / 2 + value % 2;
                 Invalidate();
