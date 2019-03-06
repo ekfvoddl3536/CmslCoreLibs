@@ -44,7 +44,9 @@ namespace CmslDesign
     {
         private const string Category1 = "설정1";
         private const int BrushCount = 3;
-
+        
+        // m_radi 값은 제거됨 2019 03 05
+        // 초기에는 수정할 수 있었으나, radi 값 수정이 굉장히 많은 오류를 내, 수정 불가능하게 바꿈
         private byte ModeC;
         private int m_olsize;
         private int m_insetsize;
@@ -150,6 +152,7 @@ namespace CmslDesign
 
         private void AddRound(GraphicsPath gp, Rectangle Rect)
         {
+            // 만약 m_radi를 사용하고 싶다면, 여기서 사용해야함
             gp.AddArc(Rect.X, Rect.Y, Rect.Height, Rect.Height, 90, 180);
             gp.AddLine(Rect.Height / 2, Rect.Y, Rect.Width - Rect.Height / 2, Rect.Y);
             gp.AddArc(Rect.Width - Rect.Height, Rect.Y, Rect.Height, Rect.Height, -90, 180);
